@@ -348,6 +348,12 @@ margin-left:120px;
               line-height: 24px;
               font-weight: normal;
               margin-bottom: 27px;
+
+              .divider3{
+                width: 64px;
+                height: 2px;
+                background: #E27866;
+              }
           }
           p{
               color: #86878B;
@@ -489,6 +495,109 @@ margin-left:120px;
         margin: 10px 5px;
       }
 
+// Chat
+      .six{
+        background: #FFFFFF;
+        width: 100%;
+        height: 591px;
+        
+        
+        
+        
+    
+        .up6{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 58px;
+          h1{
+            margin-top: 67px;
+            margin-bottom: 31px;
+            font-size: 36px;
+            line-height: 43px;
+          }
+          .divider6{
+            width: 64px;
+            height: 2px;
+            background: #6696E2;
+            
+
+          }
+        }
+    
+        .swiper {
+          width: 1000px;
+          height: 300px;
+          z-index: 0;
+          .swiper-slide{
+            display: flex;
+            justify-content: center;
+          }
+          .swiper-pagination-bullet{
+            margin-right: 20px;
+            border: 2px solid #E27866;
+            background: #FFFFFF;
+          }
+          .swiper-pagination-bullet-active{
+            background: #E27866;
+          }
+        }
+        .down6{
+          .box6 {
+            width: 273px;
+            height: 236px;
+            position: relative;
+   
+            .bubble {
+              position: relative;
+          
+            }
+          
+            .text {
+              width: 273px;
+              height: 147px;
+              background: #6696E2;
+              border-radius: 8px;
+              position: relative;
+              margin-bottom: 19px;
+              p{
+                padding: 20px;
+                color: #FFFFFF;
+                font-size: 16px;
+              }
+            }
+            .triangle {
+              position: absolute;
+              left: 14%;
+              bottom: -8px;
+              background: #6696E2;
+              width: 20px;
+              height: 20px;
+              border-radius: 2px;
+              transform: translateX(-50%) rotate(45deg);
+            }
+            .person-1{
+              display: flex;
+              align-items: center;
+              .nameWork{
+                margin-left: 16px;
+                h3 {
+                  font-size: 20px;
+                  color: #333333;
+                }
+                h4{
+                  font-weight: normal;
+                  font-size: 14px;
+                  color: #86878B;
+                }
+              }
+            }
+          }
+          
+       }
+      }
+
+      //Footer
 
       footer-2 {
         display: flex;
