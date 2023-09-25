@@ -1,0 +1,106 @@
+//Pricing
+body {
+    background-color: $color-3;
+  }
+  .pricingTable {
+    text-align: center;
+    font: normal normal 100 30px/30px Montserrat;
+    letter-spacing: 0px;
+    color: $color-2;
+    opacity: 1;
+    
+   
+    
+    }
+    #pricing{
+      width: 989px;
+      margin: 100px auto;
+      font: normal Montserrat;
+      
+    
+    }
+    
+    .price_card{
+      width: 300px;
+      background: $color-2;
+      display: inline-table;
+      top: 0;
+      
+    }
+    .price_card:not(:last-child){
+      margin-right: 40px;
+    }
+    .header{
+      color: $color-2;
+    }
+    .alpha .header{
+      background: $color-12;
+    }
+    .bravo .header{
+      background: $color-12;
+    }
+    .charlie .header{
+      background: $color-12;
+    }
+    .price{
+      width: 100%;
+      font-size: 60px;
+      font-weight: 300;
+      display: block;
+      text-align: center;
+      padding: 30px 0 10px;
+      
+    }
+    
+    .name{
+      width: 100%;
+      font-size: 15px;
+      font-weight: 700;
+      display: block;
+      text-align: center;
+      padding: 0 0 30px;
+    }
+    .features{
+      list-style: none;
+      text-align: center;
+      color: $color-9;
+      margin: 0;
+      padding: 0;
+    }
+    .features li{
+      margin: 0 35px;
+      padding: 10px 15px;
+      width: 200px;
+    }
+    li:nth-child(1){
+     background: $color-4;
+     color:$color-2;
+    
+    
+       
+    }
+    .features li:not(:last-child){
+      border: 1px solid $color-2;
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+    }
+    button{
+      color: $color-2;
+      border: 0;
+      border-radius: 5px;
+      height: 40px;
+      width: 200px;
+      display: block;
+      font-weight: 700;
+      font-size: 15px;
+      text-transform: uppercase;
+      margin: 20px auto 35px;
+    }
+    
+    .tip{
+      font-family: 'normal normal 600 36px/43px Montserrat';
+      position: absolute;
+      color: $color-9;
+      margin: 10px 5px;
+    }
