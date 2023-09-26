@@ -1,106 +1,102 @@
-//Pricing
-body {
-    background-color: $color-3;
+.section-pricing {
+  height: 883px;
+  background: $color-3;
+  @include flex-center;
+  justify-content: center;
+
+  div {
+    @include flex-center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 80%;
+
+    .title {
+      h1 {
+        font-size: 36px;
+        color: $color-2;
+      }
+
+      hr {
+        border-color: $color-4;
+        margin: 25px 0;
+      }
+
+      p {
+        color:  $color-2;
+        font-size: 14px;
+      }
+    }
+    
+    .prices {
+      @include flex-center;
+      justify-content: center;
+      flex-direction: row;
+      gap: 40px;
+      width: 100%;
+
+      .content {
+        justify-content: flex-end;
+        width: 343px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .space, 
+        .space-middle {
+          background: $color-4;
+          width: 100%;
+          height: 6px;
+        }
+
+        .space-middle {
+          @include flex-center;
+          justify-content: center;
+          color: $color-2;
+          height: 40px;
+          font-size: 14px;
+        }
+
+        .header {
+          @include flex-center;
+          justify-content: center;
+          background: $color-1;
+          border-radius: 5px 5px 0 0;
+          color: $color-2;
+          width: 100%;
+          height: 210px;
+
+          h1 {
+            font-size: 94px;
+            font-weight: 400;
+
+            span {
+              font-size: 40px;
+            }
+          }
+
+          h2 {
+            font-weight: 400;
+            font-size: 20px;
+          }
+
+          h3 {
+            font-weight: 400;
+            font-size: 14px;
+            opacity: 0.5;
+          }
+        }
+
+        .features {
+          width: 100%;
+          background: $color-2;
+          border-radius: 0 0 5px 5px;
+          color: $color-5;
+          font-size: 14px;
+          line-height: 40px;
+          height: 240px;
+        }
+      }
+    }
   }
-  .pricingTable {
-    text-align: center;
-    font: normal normal 100 30px/30px Montserrat;
-    letter-spacing: 0px;
-    color: $color-2;
-    opacity: 1;
-    
-   
-    
-    }
-    #pricing{
-      width: 989px;
-      margin: 100px auto;
-      font: normal Montserrat;
-      
-    
-    }
-    
-    .price_card{
-      width: 300px;
-      background: $color-2;
-      display: inline-table;
-      top: 0;
-      
-    }
-    .price_card:not(:last-child){
-      margin-right: 40px;
-    }
-    .header{
-      color: $color-2;
-    }
-    .alpha .header{
-      background: $color-12;
-    }
-    .bravo .header{
-      background: $color-12;
-    }
-    .charlie .header{
-      background: $color-12;
-    }
-    .price{
-      width: 100%;
-      font-size: 60px;
-      font-weight: 300;
-      display: block;
-      text-align: center;
-      padding: 30px 0 10px;
-      
-    }
-    
-    .name{
-      width: 100%;
-      font-size: 15px;
-      font-weight: 700;
-      display: block;
-      text-align: center;
-      padding: 0 0 30px;
-    }
-    .features{
-      list-style: none;
-      text-align: center;
-      color: $color-9;
-      margin: 0;
-      padding: 0;
-    }
-    .features li{
-      margin: 0 35px;
-      padding: 10px 15px;
-      width: 200px;
-    }
-    li:nth-child(1){
-     background: $color-4;
-     color:$color-2;
-    
-    
-       
-    }
-    .features li:not(:last-child){
-      border: 1px solid $color-2;
-      border-top: 0;
-      border-left: 0;
-      border-right: 0;
-    }
-    button{
-      color: $color-2;
-      border: 0;
-      border-radius: 5px;
-      height: 40px;
-      width: 200px;
-      display: block;
-      font-weight: 700;
-      font-size: 15px;
-      text-transform: uppercase;
-      margin: 20px auto 35px;
-    }
-    
-    .tip{
-      font-family: 'normal normal 600 36px/43px Montserrat';
-      position: absolute;
-      color: $color-9;
-      margin: 10px 5px;
-    }
+}
