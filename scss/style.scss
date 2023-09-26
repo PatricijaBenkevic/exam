@@ -14,7 +14,10 @@ $color-12:#000000;
 $color-13:#212121;
 
 
-
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+}
 
 
 

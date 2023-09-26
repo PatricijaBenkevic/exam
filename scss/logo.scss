@@ -53,9 +53,8 @@
       margin-right: 20px;
    }
    .down .eye{
-      display: flex;
+      @include flex-center;
       justify-content: center;
-      align-items: center;
       background: $color-6;
       width: 50px;
       height: 50px;

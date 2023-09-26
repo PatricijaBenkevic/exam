@@ -1,8 +1,7 @@
 //section 2
 
 .section-2 {
-    display :flex;
-    align-items: center;
+    @include flex-center;
     justify-content: center;
     position: relative;
     width: 100%;
@@ -28,8 +27,7 @@
     }
   
     div {
-      display: flex;
-      align-items: center;
+      @include flex-center;
       justify-content: space-between;
   
       .grid-1 {
@@ -38,8 +36,7 @@
         gap: 14px;
   
         div {
-        display: flex;
-        align-items: center;
+        @include flex-center;
         justify-content: space-between;
           background: $color-6;
           font-size: 14px;
