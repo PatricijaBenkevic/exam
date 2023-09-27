@@ -19,15 +19,13 @@ $color-13:#212121;
     align-items: center;
 }
 
-
-
-
-
-
+@import "nav-bar.scss";
+@import "flex-wrap.scss";
 @import "footer.scss";
 @import "section-2.scss";
 @import "logo.scss";
 @import "white.scss";
 @import "pricing.scss";
 @import "chat.scss";
-@import "forma.scss"
+@import "contact-us.scss";
+@import "footer-2.scss"

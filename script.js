@@ -35,37 +35,26 @@ const swiper = new Swiper(".swiper", {
 //   swiper.slideNext();
 // });
 
-document.addEventListener("DOMContentLoaded", () => {
-  let opened = false;
+const burgerContent = document.getElementById("burger-content");
+const burgerButtonClose = document.getElementById("burger-button-close");
+const burgerBtn = document.getElementById("burger-btn");
 
-  const burgetBtn = document.getElementById("burger-btn");
-  const burgerContent = document.getElementById("burger-content");
-  const burgerButtonClose = document.getElementById("burger-button-close");
+burgerBtn.addEventListener("click", () => {
+  burgerContent.style.display = "block";
+});
 
-  if (!burgerContent) {
-    console.log("not found");
-    return;
+burgerButtonClose.addEventListener("click", () => {
+  burgerContent.style.display = "none";
+});
+
+// JavaScript to update the navigation style on scroll
+window.addEventListener("scroll", () => {
+  const scrollPosition = window.scrollY;
+  const fixedNav = document.querySelector(".fixed-nav");
+
+  if (scrollPosition > 0) {
+    fixedNav.style.backgroundColor = "black"; // Change background color when scrolled
+  } else {
+    fixedNav.style.backgroundColor = "transparent"; // Reset background color when at the top
   }
-  if (!burgetBtn) {
-    console.log("not found");
-    return;
-  }
-
-  burgerButtonClose.addEventListener("click", () => {
-    opened = false;
-    burgerContent.style.display = "none";
-  });
-
-  console.log(burgetBtn);
-  burgetBtn.addEventListener("click", () => {
-    console.log("CLICKED");
-
-    if (opened) {
-      burgerContent.style.display = "none";
-    } else {
-      burgerContent.style.display = "flex";
-    }
-
-    opened = !opened;
-  });
 });

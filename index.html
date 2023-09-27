@@ -17,38 +17,30 @@
   </head>
   <body class="w-full">
     
-    <div id="burger-content" class="fixed h-screen w-[35vw] bg-gray-800 z-[999999] text-white top-0 left-0 hidden">
-      <div
-          class="w-full h-full gap-8 items-center text-gray-200 flex flex-col p-4"
-        >
+    <div id="burger-content" class="h-screen w-[35vw] bg-gray-800 z-[999999] text-white top-0 left-0 hidden">
+      <div class="w-full h-full gap-8 items-center text-gray-200 flex flex-col p-4">
         <div class="w-full flex justify-end">
           <button id="burger-button-close" class="text-right">CLOSE</button>
         </div>
-
-          <a class="hover:text-gray-400">Features</a>
-          <a class="hover:text-gray-400">About</a>
-          <a class="hover:text-gray-400">Pricing</a>
-          <a class="hover:text-gray-400">Contact</a>
-        </div>
+        <a class="hover:text-gray-400">Features</a>
+        <a class="hover:text-gray-400">About</a>
+        <a class="hover:text-gray-400">Pricing</a>
+        <a class="hover:text-gray-400">Contact</a>
+      </div>
     </div>
-
-
-    <div class="flex flex-col gap-0 w-full">
-      <div class="h-24 px-24 w-full bg-black flex justify-between items-center top-0">
-          <button id="burger-btn" class="md:hidden text-white"><img src="app/images/clipart773806.png" width="15px" alt="burger"></button>
-
-
+    
+    <div class="fixed-nav">
+      <div class="h-24 px-24 w-full bg-black flex justify-between items-center">
+        <button id="burger-btn" class="md:hidden text-white"><img src="app/images/clipart773806.png" width="15px" alt="burger"></button>
         <img src="app/images/cheshire-county-hygiene-services.svg" />
-
-        <div
-          class="h-full gap-8 items-center justify-center text-gray-200 font-Montserrat hidden md:flex"
-        >
+        <div class="h-full gap-8 items-center justify-center text-gray-200 font-Montserrat hidden md:flex">
           <a class="hover:text-gray-400">Features</a>
           <a class="hover:text-gray-400">About</a>
           <a class="hover:text-gray-400">Pricing</a>
           <a class="hover:text-gray-400">Contact</a>
         </div>
       </div>
+    </div>
     
 
       <div class="w-full min-h-[800px] relative flex flex-wrap">
@@ -403,7 +395,7 @@
     </div>
   </section>
 
-    <section id="reviews" class="six">
+    <section id="reviews" class="chat">
       <div class="up6">
         <h1>WHAT OUR CUSTOMERS ARE SAYING</h1>
         <div class="divider6"></div>
@@ -472,51 +464,23 @@
       </div>
      </section>
 
-     <section class="forma">
-      <div class="uplast">
+     <section id="contact" class="contact-us">
+      <div class="wrapper">
         <h1>CONTACT US</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <form action="#">
+          <input type="text" placeholder="First name">
+          <input type="text" placeholder="Last name">
+          <input type="number" placeholder="Phone number">
+          <div class="type">
+            <input type="radio" id="personal" name="personal-company" value="Personal">
+            <label for="personal">PERSONAL</label>
+            <input type="radio" id="company" name="personal-company" value="Company">
+            <label for="company">COMPANY</label>
+          </div>
+          <button>SEND</button>
+        </form>
       </div>
-      <div class="mx-auto max-w-xl mt-8">
-        <div class="bg-white flex p-10 gap-2 w-full flex-col font-Montserrat">
-            <input
-                class="outline-none p-1 border-b border-gray-500 flex-1 font-Montserrat"
-                placeholder="First name"
-                type="text"
-            />
-            <input
-                class="outline-none p-1 border-b border-gray-500 flex-1 font-Montserrat"
-                placeholder="Last name"
-                type="text"
-            />
-            <input
-                class="outline-none p-1 border-b border-gray-500 flex-1 font-Montserrat"
-                placeholder="Phone number"
-                type="text"
-            />
-    
-            <div class="flex flex-1 gap-2">
-                <div class="flex gap-1">
-                    <input type="radio" />
-                    <p class="text-sm font-bold font-Montserrat">Personal</p>
-                </div>
-    
-                <div class="flex gap-1">
-                    <input type="radio" />
-                    <p class="text-sm font-bold font-Montserrat">Company</p>
-                </div>
-            </div>
-        </div>
-    
-        <div class="w-full rounded-b p-2 bg-green-400">
-           <center> <button><p class="text-center text-white text-lg font-Montserrat">
-                SEND</button></center>
-            </p>
-        </div>
-    </div>
-    
-    
-      
     </section>
 
     <footer-2>
@@ -545,7 +509,7 @@
         <div class="social-media-text-2">© 2019 Cheshire County</div>
         </div>
       </div>
-    </footer>
+    </footer-2>
 
     
     

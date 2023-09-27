@@ -45,3 +45,48 @@ footer {
   opacity: 1;
   margin-left:120px;
   }
+
+
+  @media (max-width: 768px) {
+    footer {
+      @include flex-center;
+      justify-content: space-between;
+      background-color: $color-2;
+      box-shadow: 0px 1px 3px $color-12;
+      padding: 15px 20px;
+      height: 105px;
+    }
+  
+    .logo-container {
+      @include flex-center;
+    }
+  
+    .logo {
+      margin-right: 115px;
+      margin-bottom: 17px;
+      opacity: 0.65px;
+    }
+  
+    .footer-text {
+      text-align: left;
+    }
+  
+    .social-media-text {
+      margin-bottom: 17px;
+      text-align: left;
+      font: normal normal 600 20px/24px Montserrat;
+      letter-spacing: 0px;
+      color: $color-9;
+      opacity: 1;
+      margin-left: 120px;
+    }
+  
+    .description-text {
+      text-align: left;
+      font: normal normal normal 14px/20px Montserrat;
+      letter-spacing: 0px;
+      color: $color-5;
+      opacity: 1;
+      margin-left: 120px;
+    }
+  }

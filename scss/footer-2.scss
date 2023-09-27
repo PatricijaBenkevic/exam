@@ -1,4 +1,4 @@
-.forma{
+.footer-2{
     background: $color-6;
     width: 100%;
     height: 591px;
@@ -71,3 +71,28 @@
   opacity: 1;
  
   }
+
+  @media (max-width: 768px) {
+    footer-2 {
+      text-align: center; 
+      padding: 10px; 
+    }
+  
+    .logo-container-2 {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    .logo-2 {
+      margin: 5px; 
+    }
+  
+    .footer-text-2 {     
+      font-size: 14px; 
+    }
+  }
+  
+
+
+
